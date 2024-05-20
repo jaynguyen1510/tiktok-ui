@@ -6,18 +6,27 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+<<<<<<< HEAD
     "normalize.css": "^8.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.1",
+=======
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+>>>>>>> ced1e6713d992570d7f702d904561070a14949ae
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
     "babel-plugin-module-resolver": "^5.0.2",
     "customize-cra": "^1.0.0",
+<<<<<<< HEAD
     "react-app-rewired": "^2.2.1",
     "sass": "^1.77.2"
+=======
+    "react-app-rewired": "^2.2.1"
+>>>>>>> ced1e6713d992570d7f702d904561070a14949ae
   },
   "scripts": {
     "start": "react-app-rewired start",

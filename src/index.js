@@ -1,16 +1,26 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+<<<<<<< HEAD
 
 import App from "~/App";
 import reportWebVitals from "./reportWebVitals";
 import GlobalSyles from "~/components/GlobalSyle";
+=======
+import "./index.css";
+import App from "~/App";
+import reportWebVitals from "./reportWebVitals";
+>>>>>>> ced1e6713d992570d7f702d904561070a14949ae
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+<<<<<<< HEAD
     <GlobalSyles>
       <App />
     </GlobalSyles>
+=======
+    <App />
+>>>>>>> ced1e6713d992570d7f702d904561070a14949ae
   </React.StrictMode>
 );
 
