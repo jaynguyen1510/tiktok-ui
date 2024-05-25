@@ -11,6 +11,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import images from "~/asset/images";
 import { useEffect, useState } from "react";
+import AccountItem from "~/components/AccountItem";
 
 const cx = classNames.bind(styles);
 
@@ -21,7 +22,7 @@ function Header() {
 
   useEffect(() => {
     setTimeout(() => {
-      setSearchResult([1, 2, 3]);
+      setSearchResult([]);
     }, 3000);
   }, []);
 
@@ -36,6 +37,9 @@ function Header() {
             <div className={cx("search-result")} tabIndex="-1" {...attrs}>
               <PoperWarper>
                 <h4 className={cx("search-title")}>Accounts</h4>
+                <AccountItem />
+                <AccountItem />
+                <AccountItem />
               </PoperWarper>
             </div>
           )}
