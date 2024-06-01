@@ -8,13 +8,11 @@ import { Wrapper as PoperWarper } from "~/components/Poper";
 import {
   faCircleQuestion,
   faCircleXmark,
-  faCloudUpload,
   faCoins,
   faEarthAsia,
   faEllipsisVertical,
   faGear,
   faKeyboard,
-  faMagnifyingGlass,
   faSignOut,
   faSpinner,
   faUser,
@@ -27,6 +25,13 @@ import "tippy.js/dist/tippy.css";
 import images from "~/asset/images";
 import AccountItem from "~/components/AccountItem";
 import Menu from "~/components/Poper/Menu";
+import {
+  InboxIcon,
+  MessageIcon,
+  SearchIcon,
+  UploadIcon,
+} from "~/components/icon";
+import Image from "~/components/Image";
 
 const cx = classNames.bind(styles);
 const MENU_ITEMS = [
@@ -125,16 +130,27 @@ function Header() {
             <FontAwesomeIcon className={cx("loading")} icon={faSpinner} />
 
             <button className={cx("search-btn")}>
-              <FontAwesomeIcon icon={faMagnifyingGlass} />
+              <SearchIcon />
             </button>
           </div>
         </HeadlessTippy>
         <div className={cx("actions")}>
           {currentUser ? (
             <>
-              <Tippy delay={[0, 200]} content="Upload Video" placement="bottom">
+              <Tippy delay={[0, 50]} content="Upload Video" placement="bottom">
                 <button className={cx("action-btn")}>
-                  <FontAwesomeIcon icon={faCloudUpload} />
+                  <UploadIcon />
+                </button>
+              </Tippy>
+              <Tippy delay={[0, 50]} content="Tin nhắn" placement="bottom">
+                <button className={cx("action-btn")}>
+                  <MessageIcon />
+                </button>
+              </Tippy>
+              <Tippy delay={[0, 50]} content="Thông báo" placement="bottom">
+                <button className={cx("action-btn")}>
+                  <InboxIcon />
+                  <span className={cx("badge")}>12</span>
                 </button>
               </Tippy>
             </>
@@ -149,10 +165,11 @@ function Header() {
             onChange={handleMenuChange}
           >
             {currentUser ? (
-              <img
+              <Image
                 className={cx("user-avatar")}
                 src="https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-1/317720382_877648576724940_8250332899106975008_n.jpg?stp=dst-jpg_p200x200&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=azG3kVzvka0Q7kNvgH7-aDp&_nc_ht=scontent.fsgn5-10.fna&oh=00_AYBI6DcIpamvIRoP9XjMgjIYYCP1Tqb-vFaFA_pkp1eAkQ&oe=665F51CE"
                 alt="thuong thuong"
+                fallBack="https://anhsex.asia/wp-content/uploads/2024/01/xem-anh-yua-mikami-nude-khong-che-voi-vong-1-to-tron-3.jpg"
               />
             ) : (
               <button className={cx("more-btn")}>
