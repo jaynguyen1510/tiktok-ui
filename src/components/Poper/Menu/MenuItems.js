@@ -1,14 +1,21 @@
 import Button from "~/components/Button";
 import classNames from "classnames/bind";
 
-import styles from "./Memnu.modules.scss";
+import styles from "./Menu.modules.scss";
 
 const cx = classNames.bind(styles);
 
-function MenuItem({ data }) {
-  console.log(data);
+function MenuItem({ data, onClick }) {
+  const classes = cx("menu-item", {
+    separate: data.separate,
+  });
   return (
-    <Button className={cx("menu-item")} leftIcon={data.icon} to={data.to}>
+    <Button
+      className={classes}
+      leftIcon={data.icon}
+      to={data.to}
+      onClick={onClick}
+    >
       {data.title}
     </Button>
   );
