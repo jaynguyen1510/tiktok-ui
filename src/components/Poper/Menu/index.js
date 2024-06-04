@@ -17,7 +17,7 @@ function Menu({ children, items = [], onChange = defaultFnc }) {
   const renderItems = () => {
     return current.data.map((item, index) => {
       const isParent = !!item.children;
-      console.log(item.children);
+      // console.log(item.children);
       return (
         <MenuItem
           key={index}
