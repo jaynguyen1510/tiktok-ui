@@ -19,7 +19,9 @@
     align-items: center;
     justify-content: space-between;
 }
-
+.logo-link{
+    display: flex;
+}
 
 //actions
 .actions{
@@ -53,7 +55,7 @@
     font-size: 1.4rem;
     font-weight: 600;
     color: var(--white);
-    font-family: 'ProximaNova', sans-serif;
+    font-family: var(--font-family2);
     background-color: var(--primary);
 }
 .user-avatar{
