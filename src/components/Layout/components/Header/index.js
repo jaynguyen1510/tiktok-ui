@@ -134,7 +134,7 @@ function Header() {
             {currentUser ? (
               <Image
                 className={cx("user-avatar")}
-                src="https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-1/317720382_877648576724940_8250332899106975008_n.jpg?stp=dst-jpg_p200x200&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=azG3kVzvka0Q7kNvgH7-aDp&_nc_ht=scontent.fsgn5-10.fna&oh=00_AYBI6DcIpamvIRoP9XjMgjIYYCP1Tqb-vFaFA_pkp1eAkQ&oe=665F51CE"
+                src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-1/428614087_2377110952639376_5609723601646363393_n.jpg?stp=dst-jpg_p200x200&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=IPtdIDTuSgoQ7kNvgHXuEPq&_nc_ht=scontent.fsgn5-5.fna&oh=00_AYDXD3fTur01gSAZ0dPsupMzoO9Y6ek-wP-_SNkrI7G0_A&oe=6667C0DD"
                 alt="thuong thuong"
                 fallBack="https://anhsex.asia/wp-content/uploads/2024/01/xem-anh-yua-mikami-nude-khong-che-voi-vong-1-to-tron-3.jpg"
               />
