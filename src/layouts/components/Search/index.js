@@ -2,21 +2,21 @@ import HeadlessTippy from "@tippyjs/react/headless";
 import AccountItem from "~/components/AccountItem";
 import classNames from "classnames/bind";
 import styles from "./Search.module.scss";
-import * as searchService from "~/apiServiecs/searchService";
+import * as searchService from "~/services/searchService";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Wrapper as PoperWarper } from "~/components/Poper";
+import { Wrapper as PopperWarper } from "~/components/Poper";
 import { faCircleXmark, faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { SearchIcon } from "~/components/icon";
 import { useEffect, useState, useRef } from "react";
-import { useDebounce } from "~/Hook";
+import { useDebounce } from "~/hook";
 
 const cx = classNames.bind(styles);
 
 function Search() {
   const [searchValue, setSearchValue] = useState("");
   const [searchResult, setSearchResult] = useState([]);
-  const [showReasult, setShowReasult] = useState(true);
+  const [showResult, setShowResult] = useState(true);
   const [loading, setLoading] = useState(false);
 
   const debounced = useDebounce(searchValue, 500);
@@ -44,7 +44,7 @@ function Search() {
     inputRef.current.focus();
   };
   const handleHideResult = () => {
-    setShowReasult(false);
+    setShowResult(false);
   };
 
   const handleChange = (e) => {
@@ -61,15 +61,15 @@ function Search() {
     <div>
       <HeadlessTippy
         interactive
-        visible={showReasult && searchResult.length > 0}
+        visible={showResult && searchResult.length > 0}
         render={(attrs) => (
           <div className={cx("search-result")} tabIndex="-1" {...attrs}>
-            <PoperWarper>
+            <PopperWarper>
               <h4 className={cx("search-title")}>Accounts</h4>
               {searchResult.map((result) => (
                 <AccountItem key={result.id} data={result} />
               ))}
-            </PoperWarper>
+            </PopperWarper>
           </div>
         )}
         onClickOutside={handleHideResult}
@@ -81,7 +81,7 @@ function Search() {
             placeholder="Tìm kiếm video hoặc người dùng"
             spellCheck={false}
             onChange={handleChange}
-            onFocus={() => setShowReasult(true)}
+            onFocus={() => setShowResult(true)}
           />
           {!!searchValue && !loading && (
             <button className={cx("clear")} onClick={handelClear}>

@@ -3,16 +3,16 @@ import ReactDOM from "react-dom/client";
 
 import App from "~/App";
 import reportWebVitals from "./reportWebVitals";
-import GlobalSyles from "~/components/GlobalSyle";
+import GlobalStyles from "~/components/GlobalStyle";
 
 import "./index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <GlobalSyles>
+    <GlobalStyles>
       <App />
-    </GlobalSyles>
+    </GlobalStyles>
   </React.StrictMode>
 );
 

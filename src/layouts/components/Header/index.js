@@ -28,7 +28,7 @@ const cx = classNames.bind(styles);
 const MENU_ITEMS = [
   {
     icon: <FontAwesomeIcon icon={faEarthAsia} />,
-    title: "Chọn ngôn ngữ",
+    title: "Change language",
     children: {
       title: "language",
       data: [
@@ -40,7 +40,7 @@ const MENU_ITEMS = [
         {
           type: "language",
           code: "vn",
-          title: "Tiếng Việt",
+          title: "VietNam",
         },
       ],
     },
@@ -52,7 +52,7 @@ const MENU_ITEMS = [
   },
   {
     icon: <FontAwesomeIcon icon={faKeyboard} />,
-    title: "Keyboard shorcuts",
+    title: "Keyboard shortcut",
   },
 ];
 
@@ -88,7 +88,7 @@ function Header() {
     ...MENU_ITEMS,
     {
       icon: <FontAwesomeIcon icon={faSignOut} />,
-      title: "Đăng xuất",
+      title: "LogOut",
       to: "/logout",
       separate: true,
     },
@@ -97,7 +97,7 @@ function Header() {
     <header className={cx("wrapper")}>
       <div className={cx("inner")}>
         <Link to={routesConfig.home} className={cx("logo-link")}>
-          <img src={images.logo} alt="tiktok" />
+          <img src={images.logo} alt="TikTok" />
         </Link>
 
         <Search />
@@ -109,12 +109,12 @@ function Header() {
                   <UploadIcon />
                 </button>
               </Tippy>
-              <Tippy delay={[0, 50]} content="Tin nhắn" placement="bottom">
+              <Tippy delay={[0, 50]} content="Message" placement="bottom">
                 <button className={cx("action-btn")}>
                   <MessageIcon />
                 </button>
               </Tippy>
-              <Tippy delay={[0, 50]} content="Thông báo" placement="bottom">
+              <Tippy delay={[0, 50]} content="Notification" placement="bottom">
                 <button className={cx("action-btn")}>
                   <InboxIcon />
                   <span className={cx("badge")}>12</span>
@@ -135,7 +135,7 @@ function Header() {
               <Image
                 className={cx("user-avatar")}
                 src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-1/428614087_2377110952639376_5609723601646363393_n.jpg?stp=dst-jpg_p200x200&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=IPtdIDTuSgoQ7kNvgHXuEPq&_nc_ht=scontent.fsgn5-5.fna&oh=00_AYDXD3fTur01gSAZ0dPsupMzoO9Y6ek-wP-_SNkrI7G0_A&oe=6667C0DD"
-                alt="thuong thuong"
+                alt="avatar"
                 fallBack="https://anhsex.asia/wp-content/uploads/2024/01/xem-anh-yua-mikami-nude-khong-che-voi-vong-1-to-tron-3.jpg"
               />
             ) : (
