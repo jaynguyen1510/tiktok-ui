@@ -72,7 +72,7 @@ function Header() {
     {
       icon: <FontAwesomeIcon icon={faUser} />,
       title: "View Profile",
-      to: "/@thuongthuong",
+      to: "/@myProfile",
     },
     {
       icon: <FontAwesomeIcon icon={faCoins} />,
