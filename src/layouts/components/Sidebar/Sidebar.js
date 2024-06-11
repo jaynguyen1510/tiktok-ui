@@ -10,6 +10,7 @@ import {
   LiveActiveIcon,
 } from "~/components/icon";
 import config from "~/config";
+import SuggestedAccount from "~/components/SuggestedAccount";
 const cx = classNames.bind(styles);
 const Sidebar = () => {
   return (
@@ -34,6 +35,8 @@ const Sidebar = () => {
           activeIcon={<LiveActiveIcon />}
         ></MenuItem>
       </Menu>
+      <SuggestedAccount label="Suggested Account" />
+      <SuggestedAccount label="Following Account" />
     </aside>
   );
 };
