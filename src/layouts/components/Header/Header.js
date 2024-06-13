@@ -134,9 +134,9 @@ function Header() {
             {currentUser ? (
               <Image
                 className={cx("user-avatar")}
-                src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-1/428614087_2377110952639376_5609723601646363393_n.jpg?stp=dst-jpg_p200x200&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=IPtdIDTuSgoQ7kNvgHXuEPq&_nc_ht=scontent.fsgn5-5.fna&oh=00_AYDXD3fTur01gSAZ0dPsupMzoO9Y6ek-wP-_SNkrI7G0_A&oe=6667C0DD"
+                src="https://scontent-hkg4-1.xx.fbcdn.net/v/t1.6435-9/50988168_895896207427532_3148602475582324736_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=5S72l-FdrfQQ7kNvgG1utIo&_nc_ht=scontent-hkg4-1.xx&oh=00_AYD-QZvoXqApP0O-vTRK3vfpbmvVRdH0K8uKgxyGlFiTHQ&oe=66928215"
                 alt="avatar"
-                fallBack="https://anhsex.asia/wp-content/uploads/2024/01/xem-anh-yua-mikami-nude-khong-che-voi-vong-1-to-tron-3.jpg"
+                fallBack="https://scontent-hkg4-1.xx.fbcdn.net/v/t39.30808-1/428614087_2377110952639376_5609723601646363393_n.jpg?stp=dst-jpg_p200x200&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=QFAmsM4gpq8Q7kNvgG6ydJc&_nc_ht=scontent-hkg4-1.xx&oh=00_AYBOOUXPa4Ctto38R88ZeyM8avNdAHBwZrSXk0EfS5289g&oe=6670C31D"
               />
             ) : (
               <button className={cx("more-btn")}>
